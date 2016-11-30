@@ -1,0 +1,11 @@
+body nav ul li{
+    display:inline;
+    margin-right:10%;
+}
+body nav{
+    background-color:aliceblue;
+}
+#adress{
+    border: 1px solid;
+    width:200px;
+}

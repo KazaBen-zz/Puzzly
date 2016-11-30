@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Puzzly</title>
+	<meta name="author" content="Benediktas Kazanavicius">
+	<link rel="stylesheet" href="index.css"> </head>
+
+<body>
+	<div id="wrapper">
+		<nav>
+			<ul class="topnav" id="myTopnav">
+                <li> <a href="news.html" id="logo"><img src="logo.png"></img></a> </li>
+				<li> <a href="news.html">News</a> </li>
+                <li> <a href="founders.html">Founders</a> </li>
+				<li> <a href="contact.html">Contact</a> </li>
+                <li> <a href="accessibility.html">Accessibility</a> </li>
+                  <li class="icon">
+                    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                </li>
+                <script>
+                                function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+                    </script>
+			</ul>
+		</nav>
+        <h1> Our team:</h1>
+        <p> It is all fictitious </p>
+        <div id="founders">
+        <img src="billgates.jpg" id="billgates">
+        <p id="billtext"> Bill Gates, 61 years old. Founder of Microsoft, the wealthiest man in the world. Bill is currently Puzzly's software developing assisant.</p>
+        </div>
+        <img src="me.jpg" id="me">
+        <p id="metext"> Benediktas Kazanavicius, 19 years old. Ben is currently a student in The University of Sheffield. He is a founder of Puzzly and CEO of the company.</p>
+        <img src="butkevicius.jpg" id="butkevicius">
+        <p id="butkeviciustext"> Algirdas Butkevicius, 58 years old. Algirdas used to be prime minister of Lithuania. He has quit his job and decided to join Puzzly as our clerk.</p>
+	</div>
+</body>
+
+</html>
