@@ -94,16 +94,23 @@ ul.topnav li.icon {display: none;}
     body nav ul li a{
         font-size:1.25em;
     }
-    #billgates,#butkevicius,#me{
+    #billgates,#butkevicius{
         float:right;
         clear:right;
         margin:10px;
+    }
+    #me{
+        float:left;
+        margin:10px
     }
       .founderimg{
         width:300px;
     }
     h2{
         text-align: center;
+    }
+    .foundertext{
+        margin:10px;
     }
 }
 @media screen and (min-width:1000px) {
@@ -117,15 +124,23 @@ ul.topnav li.icon {display: none;}
     body nav ul li a{
         font-size:1.25em;
     }
-    #billgates,#butkevicius,#me{
+    #billgates,#butkevicius{
         float:right;
         clear:right;
         margin:10px;
+    }
+    #me{
+        float:left;
+        margin:10px
+
     }
       .founderimg{
         width:300px;
     }
     h2{
         text-align: center;
+    }
+        .foundertext{
+        margin:10px;
     }
 }
