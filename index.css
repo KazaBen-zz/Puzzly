@@ -6,10 +6,7 @@ body nav ul li img {
 body nav ul li #logo {
     padding: 3px 10px 0px 10px;
 }
-h1 {
-    text-align: center;
-    margin: 5px 0;
-}
+
 body nav ul li {
     vertical-align: middle;
 }
@@ -35,11 +32,16 @@ body nav ul li a {
 ul li a:hover {
     background-color: rgb(126, 168, 235);
 }
+
+ul.topnav li.icon {
+    display: none;
+}
 body {
     background-color: aliceblue;
 }
-ul.topnav li.icon {
-    display: none;
+h1 {
+    text-align: center;
+    margin: 5px 0;
 }
 #billgatesdiv,
 #mediv,
@@ -85,7 +87,7 @@ ul.topnav li.icon {
 }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 802px) {
     ul.topnav.responsive {
         position: relative;
     }
@@ -117,7 +119,7 @@ ul.topnav li.icon {
         width: 100%;
     }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 802px) {
     body nav ul li #logo {
         padding: 3px 30px 0px 30px;
     }
