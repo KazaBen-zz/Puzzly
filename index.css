@@ -64,6 +64,13 @@ ul.topnav li.icon {display: none;}
     }
 
 
+/* If the screen has less width that 240px page will display elements as it was 240px */
+@media screen and (max-width:240px) {
+    #wrapper{
+        width:240px;
+    }
+    
+}
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width:680px) {
   ul.topnav.responsive {position: relative;}
@@ -112,6 +119,9 @@ ul.topnav li.icon {display: none;}
     .foundertext{
         margin:10px;
     }
+}
+#comments{
+    width:90%;
 }
 @media screen and (min-width:1000px) {
     #wrapper{
