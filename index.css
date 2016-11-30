@@ -154,3 +154,14 @@ ul.topnav li.icon {display: none;}
         margin:10px;
     }
 }
+footer {
+    display: block;
+    clear:both;
+    width: 100%;
+    text-align: center;
+}
+footer p{
+    margin:0;
+    border-top:1px solid rgb(150,150,150);
+    color:rgb(126, 126, 126);
+}
