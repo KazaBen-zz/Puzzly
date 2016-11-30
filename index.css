@@ -64,8 +64,8 @@ ul.topnav li.icon {display: none;}
     }
 
 
-/* If the screen has less width that 240px page will display elements as it was 240px */
-@media screen and (max-width:240px) {
+/* If the screen has less width that 239px page will display elements as it was 240px */
+@media screen and (max-width:239px) {
     #wrapper{
         width:240px;
     }
