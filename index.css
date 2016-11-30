@@ -41,6 +41,10 @@ body{
 }
 
 ul.topnav li.icon {display: none;}
+        #billgatesdiv,#mediv{
+        overflow: hidden;
+        border-bottom: 1px solid rgb(188, 188, 188)
+    }
 
 @media only screen and (max-width: 513px){
    #logo{
@@ -55,6 +59,10 @@ ul.topnav li.icon {display: none;}
     display: inline-block;
   }
 }
+    #mediv, #billgatesdiv, #butkeviciusdiv{
+        margin:10px;
+    }
+
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width:680px) {
@@ -75,6 +83,9 @@ ul.topnav li.icon {display: none;}
     #billgates,#me,#butkevicius{
         width:100%;
     }
+    #billgates{
+        margin-top:30px;
+    }
 }
 @media screen and (min-width:680px) {
     body nav ul li #logo{
@@ -88,45 +99,33 @@ ul.topnav li.icon {display: none;}
         clear:right;
         margin:10px;
     }
-    #billtext,#butkeviciustext,#metext{
-        float:left;
-        height:300px;
-    }
-
       .founderimg{
         width:300px;
     }
-    .foundertext{
-        width:300px;
+    h2{
+        text-align: center;
     }
-    
 }
 @media screen and (min-width:1000px) {
+    #wrapper{
+        width:1000px;
+        margin: auto;
+    }
     body nav ul li #logo{
         padding: 3px 30px 0px 30px;
 }
     body nav ul li a{
         font-size:1.25em;
     }
-    #billgates{
+    #billgates,#butkevicius,#me{
         float:right;
-        width:60%;
-        clear:left;
+        clear:right;
+        margin:10px;
     }
-    #billtext{
-        float:left;
-        clear:left;
-        
+      .founderimg{
+        width:300px;
     }
-    body{
-        width:1000px;
+    h2{
+        text-align: center;
     }
-    .founderimg{
-        width:400px;
-        display:inline;
-    }
-    .foundertext{
-        width: 500px;
-    }
-    
 }
