@@ -2,67 +2,69 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Puzzly</title>
-	<meta name="author" content="Benediktas Kazanavicius">
-	<link rel="stylesheet" href="index.css"> </head>
+    <meta charset="utf-8">
+    <title>Puzzly</title>
+    <meta name="author" content="Benediktas Kazanavicius">
+    <link rel="stylesheet" href="index.css"> </head>
 
 <body>
-	<div id="wrapper">
-		<nav>
-			<ul class="topnav" id="myTopnav">
-                <li> <a href="news.html" id="logo"><img src="logo.png"></img></a> </li>
-				<li> <a href="news.html">News</a> </li>
+    <div id="wrapper">
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li>
+                    <a href="news.html" id="logo"><img src="logo.png"></img>
+                    </a>
+                </li>
+                <li> <a href="news.html">News</a> </li>
                 <li> <a href="founders.html">Founders</a> </li>
-				<li> <a href="contact.html">Contact</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
                 <li> <a href="accessibility.html">Accessibility</a> </li>
-                  <li class="icon">
+                <li class="icon">
                     <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
                 </li>
                 <script>
-                                function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-                    </script>
-			</ul>
-		</nav>
-        <p id="adress"> Adress: Endcliffe Crescent 24 <br>
-             S10 3BB <br>
-             Sheffield <br>
-             United Kingdom
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
+            </ul>
+        </nav>
+        <p id="adress"> Adress: Endcliffe Crescent 24
+            <br> S10 3BB
+            <br> Sheffield
+            <br> United Kingdom
         </p>
         <p>
-        Let us know if you have any questions!
+            Let us know if you have any questions!
         </p>
-  <form name="myform" action="http://www.dcs.shef.ac.uk/cgi-bin/FormMail.pl" method="get">
+        <form name="myform" action="http://www.dcs.shef.ac.uk/cgi-bin/FormMail.pl" method="get">
 
-    <input type="hidden" name="recipient" value="bkazanavicius1@sheffield.ac.uk">
-  
-    <input type="hidden" name="subject" value="Test Form">
+            <input type="hidden" name="recipient" value="bkazanavicius1@sheffield.ac.uk">
 
-    <p>
-      <label for="email">Your e-mail:</label>
-      <input type="email" name="email" id="email"
-             maxlength="60" size="30" placeholder="type your e-mail..."  required>
-    </p>
+            <input type="hidden" name="subject" value="Test Form">
 
-    <p>
-      <textarea name="comments" id="comments" placeholder="type your comments..." rows="5" cols="50"></textarea>
-    </p>
-    
-    <p>
-      <input type="submit" name="submit" id="submit" value="Submit">
-      <input type="reset">
-    </p>
+            <p>
+                <label for="email">Your e-mail:</label>
+                <input type="email" name="email" id="email" maxlength="60" size="30" placeholder="type your e-mail..." required>
+            </p>
+
+            <p>
+                <textarea name="comments" id="comments" placeholder="type your comments..." rows="5" cols="50"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" name="submit" id="submit" value="Submit">
+                <input type="reset">
+            </p>
 </body>
-        <footer>
-            <p><small> Created by Benediktas Kazanavicius</small> </p>
-        </footer>
-    	</div>
+<footer>
+    <p><small> Created by Benediktas Kazanavicius</small> </p>
+</footer>
+</div>
 
 </html>

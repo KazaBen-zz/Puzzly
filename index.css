@@ -1,177 +1,201 @@
-body nav ul li img{
+body nav ul li img {
     height: 43.2px;
-    width:43.2px;
-    padding-top:3px;
-    }
-body nav ul li #logo{
+    width: 43.2px;
+    padding-top: 3px;
+}
+body nav ul li #logo {
     padding: 3px 10px 0px 10px;
-    
 }
-h1{
+h1 {
     text-align: center;
-    margin:5px 0;
+    margin: 5px 0;
 }
-body nav ul li{
+body nav ul li {
     vertical-align: middle;
 }
-body nav ul{
+body nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:skyblue;
+    background-color: skyblue;
 }
-body nav li{
-    float:left;
+body nav li {
+    float: left;
 }
-body nav ul li a{ 
+body nav ul li a {
     display: inline-block;
     transition: 0.7s;
     text-align: center;
-    padding:14px 16px;
+    padding: 14px 16px;
     text-decoration: none;
-    color:rgb(50, 69, 80);
+    color: rgb(50, 69, 80);
     line-height: 30px;
 }
-
-ul li a:hover {background-color: rgb(126, 168, 235);}
-
-body{
-    background-color:aliceblue;
+ul li a:hover {
+    background-color: rgb(126, 168, 235);
 }
-
-ul.topnav li.icon {display: none;}
-
-#billgatesdiv,#mediv,#butkeviciusdiv,#article1,#article2,#article3,#article4,#article5{
-overflow: hidden;
-border-top: 1px solid rgb(188, 188, 188);
+body {
+    background-color: aliceblue;
 }
-#mediv, #billgatesdiv, #butkeviciusdiv,#article1,#article2,#article3,#article4,#article5{
-     margin:10px;
+ul.topnav li.icon {
+    display: none;
 }
-@media only screen and (max-width: 513px){
-   #logo{
-       padding: 0 0;
-    } 
+#billgatesdiv,
+#mediv,
+#butkeviciusdiv,
+.newsArticle {
+    overflow: hidden;
+    border-top: 1px solid rgb(130, 130, 130);
+    padding-top: 10px;
+    margin-top: 10px;
 }
- /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
+#mediv,
+#billgatesdiv,
+#butkeviciusdiv,
+#article1,
+#article2,
+#article3,
+#article4,
+#article5 {
+    margin: 10px;
 }
-
-
-
-/* If the screen has less width that 239px page will display elements as it was 240px */
-@media screen and (max-width:239px) {
-    #wrapper{
-        width:240px;
+@media only screen and (max-width: 513px) {
+    #logo {
+        padding: 0 0;
     }
-    
+}
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+/* If the screen has less width that 239px page will display elements as it was 240px */
+
+@media screen and (max-width: 239px) {
+    #wrapper {
+        width: 240px;
+    }
 }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-    #billgates,#me,#butkevicius{
-        width:100%;
+
+@media screen and (max-width: 680px) {
+    ul.topnav.responsive {
+        position: relative;
     }
-    #billgates{
-        margin-top:30px;
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
-    .articlePhoto{
-        width:100%;
-        border-top:1px solid rgb(130,130,130);
-        padding-top:10px;
-        margin-top:10px;
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    #billgates,
+    #me,
+    #butkevicius {
+        width: 100%;
+    }
+    #billgates {
+        margin-top: 30px;
+    }
+    .articlePhoto,
+    #billgatesdiv,
+    #mediv,
+    #butkeviciusdiv {
+        width: 100%;
     }
 }
-@media screen and (min-width:680px) {
-    body nav ul li #logo{
+@media screen and (min-width: 680px) {
+    body nav ul li #logo {
         padding: 3px 30px 0px 30px;
-}
-    body nav ul li a{
-        font-size:1.25em;
     }
-    #billgates,#butkevicius,#articlePhoto1,#articlePhoto3,#articlePhoto5{
-        float:right;
-        clear:right;
-        margin:10px;
+    body nav ul li a {
+        font-size: 1.25em;
     }
-    #me,#articlePhoto2,#articlePhoto4{
-        float:left;
-        margin:10px
+    #billgates,
+    #butkevicius,
+    #articlePhoto1,
+    #articlePhoto3,
+    #articlePhoto5 {
+        float: right;
+        clear: right;
+        margin: 10px;
     }
-      .founderimg,.articlePhoto{
-        width:300px;
+    #me,
+    #articlePhoto2,
+    #articlePhoto4 {
+        float: left;
+        margin: 10px
     }
-    h2{
+    .founderimg,
+    .articlePhoto {
+        width: 300px;
+    }
+    h2 {
         text-align: center;
     }
-    .foundertext,.articleText{
-        margin:10px;
+    .foundertext,
+    .articleText {
+        margin: 10px;
     }
-    #article5{
-        display:block;
+    #article5 {
+        display: block;
     }
 }
-#comments{
-    width:90%;
+#comments {
+    width: 90%;
 }
-@media screen and (min-width:1000px) {
-    #wrapper{
-        width:1000px;
+@media screen and (min-width: 1000px) {
+    #wrapper {
+        width: 1000px;
         margin: auto;
     }
-    body nav ul li #logo{
+    body nav ul li #logo {
         padding: 3px 30px 0px 30px;
-}
-    body nav ul li a{
-        font-size:1.25em;
     }
-    #billgates,#butkevicius{
-        float:right;
-        clear:right;
-        margin:10px;
+    body nav ul li a {
+        font-size: 1.25em;
     }
-    #me{
-        float:left;
-        margin:10px
-
+    #billgates,
+    #butkevicius {
+        float: right;
+        clear: right;
+        margin: 10px;
     }
-      .founderimg{
-        width:300px;
+    #me {
+        float: left;
+        margin: 10px
     }
-    h2{
+    .founderimg {
+        width: 300px;
+    }
+    h2 {
         text-align: center;
     }
-        .foundertext{
-        margin:10px;
+    .foundertext {
+        margin: 10px;
     }
 }
 footer {
     display: block;
-    clear:both;
+    clear: both;
     width: 100%;
     text-align: center;
 }
-footer p{
-    margin:0;
-    border-top:1px solid rgb(150,150,150);
-    color:rgb(126, 126, 126);
+footer p {
+    margin: 0;
+    border-top: 1px solid rgb(150, 150, 150);
+    color: rgb(126, 126, 126);
 }
