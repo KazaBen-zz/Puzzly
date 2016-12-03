@@ -1,6 +1,6 @@
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
-var puzzleImage = "panda.png";
+var puzzleImage = "spongebob.jpg";
 draw(context,puzzleImage);
 canvas.addEventListener('click', doSomething);
 
