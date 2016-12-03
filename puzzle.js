@@ -204,7 +204,7 @@ function changePuzzle(){
     for(var i=0;i<differenceFound.length;i++){
         differenceFound[i]=false;
     }
-
+    step=10; //reseting steps for win animation
 }
  var step = 10, steps = 50;
               delay = 20;
