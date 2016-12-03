@@ -1,6 +1,6 @@
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
-var puzzleImage = "squidward.jpg";
+var puzzleImage = "panda.png";
 draw(context,puzzleImage);
 canvas.addEventListener('click', doSomething);
 
@@ -41,7 +41,7 @@ function doSomething(evt) {
 		console.log("click: " + pos.x + ", " + pos.y + "On the plate")
 		differenceFound[0] = true;
 		foundADifference();
-        drawCircle(260,158,560,158,25,'white');
+        drawCircle(260,161,560,161,25,'white');
 
 	}
 	if (pos.x >= 230 && pos.y >= 70 && pos.x <= 260 && pos.y <= 100 && differenceFound[1] == false && puzzleImage=="spongebob.jpg") {
@@ -78,6 +78,69 @@ function doSomething(evt) {
 		differenceFound[0] = true;
 		foundADifference();
         drawCircle(15,231,320,231,20,'yellow');
+
+	}
+        if (pos.x >= 0 && pos.y >= 0 && pos.x <= 10 && pos.y <= 30 && differenceFound[1] == false && puzzleImage=="squidward.jpg") {
+		console.log("click: " + pos.x + ", " + pos.y + "On the leaf")
+		differenceFound[1] = true;
+		foundADifference();
+        drawCircle(5,10,320,15,20,'white');
+
+	}
+        if (pos.x >= 180 && pos.y >= 30 && pos.x <= 210 && pos.y <= 60 && differenceFound[2] == false && puzzleImage=="squidward.jpg") {
+		console.log("click: " + pos.x + ", " + pos.y + "On the leaf")
+		differenceFound[2] = true;
+		foundADifference();
+        drawCircle(194,43,494,43,20,'red');
+
+	}
+        if (pos.x >= 100 && pos.y >= 245 && pos.x <= 130 && pos.y <= 275 && differenceFound[3] == false && puzzleImage=="squidward.jpg") {
+		console.log("click: " + pos.x + ", " + pos.y + "On the leaf")
+		differenceFound[3] = true;
+		foundADifference();
+        drawCircle(117,257,420,257,15,'brown');
+
+	}
+        if (pos.x >= 80 && pos.y >= 135 && pos.x <= 110 && pos.y <= 165 && differenceFound[4] == false && puzzleImage=="squidward.jpg") {
+		console.log("click: " + pos.x + ", " + pos.y + "On the leaf")
+		differenceFound[4] = true;
+		foundADifference();
+        drawCircle(95,150,395,150,20,'black');
+
+	}
+        if (pos.x >= 85 && pos.y >= 200 && pos.x <= 105 && pos.y <= 230 && differenceFound[0] == false && puzzleImage=="panda.png") {
+		console.log("click: " + pos.x + ", " + pos.y + "On the leaf")
+		differenceFound[0] = true;
+		foundADifference();
+        drawCircle(91,207,391,207,20,'yellow');
+
+	}
+        if (pos.x >= 115 && pos.y >= 200 && pos.x <= 145 && pos.y <= 230 && differenceFound[1] == false && puzzleImage=="panda.png") {
+		console.log("click: " + pos.x + ", " + pos.y + "On the leaf")
+		differenceFound[1] = true;
+		foundADifference();
+        drawCircle(145,215,445,215,20,'green');
+
+	}
+        if (pos.x >= 200 && pos.y >= 35 && pos.x <= 230 && pos.y <= 65 && differenceFound[2] == false && puzzleImage=="panda.png") {
+		console.log("click: " + pos.x + ", " + pos.y + "On the leaf")
+		differenceFound[2] = true;
+		foundADifference();
+        drawCircle(218,49,518,49,20,'red');
+
+	}
+        if (pos.x >= 145 && pos.y >= 125 && pos.x <= 175 && pos.y <= 155 && differenceFound[3] == false && puzzleImage=="panda.png") {
+		console.log("click: " + pos.x + ", " + pos.y + "On the leaf")
+		differenceFound[3] = true;
+		foundADifference();
+        drawCircle(163,140,464,140,24,'blue');
+
+	}
+        if (pos.x >= 150 && pos.y >= 160 && pos.x <= 180 && pos.y <= 190 && differenceFound[4] == false && puzzleImage=="panda.png") {
+		console.log("click: " + pos.x + ", " + pos.y + "On the leaf")
+		differenceFound[4] = true;
+		foundADifference();
+        drawCircle(167,173,467,173,20,'brown');
 
 	}
     if(toFind==0){
@@ -125,9 +188,9 @@ function changePuzzle(){
         puzzleImage ="squidward.jpg"
     }
     else if(puzzleImage=="squidward.jpg"){
-        puzzleImage="pig.jpg"
+        puzzleImage="panda.png"
     }
-    else if(puzzleImage=="pig.jpg"){
+    else if(puzzleImage=="panda.png"){
         puzzleImage="spongebob.jpg"
     }
     draw(context,puzzleImage);
