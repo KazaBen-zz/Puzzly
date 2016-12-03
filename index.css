@@ -1,20 +1,21 @@
+/* Assigning logo in the navigation paddings, height and width */
 body nav ul li img {
     height: 43.2px;
     width: 43.2px;
-    padding-top: 3px;
-}
-body nav ul li #logo {
-    padding: 3px 10px 0px 10px;
+	padding: 3px 10px 0px 10px;
+
 }
 
+/* Making nav list items vertical allign in the middle */
 body nav ul li {
     vertical-align: middle;
 }
+
 body nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; /* without this div height becomes 0px */
     background-color: skyblue;
 }
 body nav li {
