@@ -2,6 +2,7 @@ var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 var puzzleImage = "spongebob.jpg";
 draw(context,puzzleImage);
+
 canvas.addEventListener('click', doSomething);
 
 function draw(context,puzzleImage) {
@@ -145,14 +146,14 @@ function doSomething(evt) {
 	}
     if(toFind==0){
         	var element1 = document.getElementById('toFind');
+            init();
+    TextSmallToBig();
 
-        	element1.textContent = "YOU WIN!!!";
-            changePuzzle();
+        //	element1.textContent = "YOU WIN!!!";
+          //  changePuzzle();
     }
 	var str = "x, y: " + pos.x + ", " + pos.y;
-	displayResult(str);
 	var str = "x, y: " + pos.x + ", " + pos.y;
-	displayResult(str);
 }
 
 // When found a difference between pictures count how many found and how many left to find and make changes on the paragraphs
@@ -165,9 +166,10 @@ function foundADifference() {
 	element2.textContent = found;
 }
 function drawCircle(x,y,x2,y2,radius,style) {
-      context.beginPath();
+    
+    context.beginPath();
     context.strokeStyle = style;
-              context.lineWidth = 5;
+    context.lineWidth = 5;
 
       context.arc(x, y, radius, 0, Math.PI*2,false);
           context.stroke();
@@ -178,7 +180,6 @@ function drawCircle(x,y,x2,y2,radius,style) {
 
 
       context.lineWidth = 5;
-
       // line color
       context.strokeStyle = style;
       context.stroke();
@@ -205,3 +206,24 @@ function changePuzzle(){
     }
 
 }
+ var step = 10, steps = 50;
+              delay = 20;
+        // Initiating win animation
+        function init() {
+            context.fillStyle = "blue";
+            context.textAlign = "center";
+            context.textBaseline = "middle";
+            TextSmallToBig();
+        }
+        // Winning animation text enlarning
+        function TextSmallToBig() {
+            step++;
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            context.save();
+            context.translate(canvas.width / 2, canvas.height / 2);
+            context.font = step + "pt Helvetica";
+            context.fillText("You win!!!!", 0, 0);
+            context.restore();
+            if (step < steps)
+                var t = setTimeout("TextSmallToBig()", 20);
+        }
