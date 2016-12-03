@@ -44,30 +44,37 @@ function doSomething(evt) {
 		console.log("click: " + pos.x + ", " + pos.y + "On the plate")
 		spongebob1 = true;
 		foundADifference();
+        drawCircle(260,158,25,'white');
 
 	}
 	if (pos.x >= 230 && pos.y >= 70 && pos.x <= 260 && pos.y <= 100 && spongebob2 == false) {
 		console.log("click: " + pos.x + ", " + pos.y + "On the ketchup")
 		spongebob2 = true;
 		foundADifference();
-        drawCircle(pos.x,pos.y);
+        drawCircle(245,90,20,'green');
 
 	}
     	if (pos.x >= 160 && pos.y >= 120 && pos.x <= 190 && pos.y <= 150 && spongebob3 == false) {
 		console.log("click: " + pos.x + ", " + pos.y + "On the hat")
 		spongebob3 = true;
 		foundADifference();
+        drawCircle(174,135,15,'black');
+
 
 	}
     	if (pos.x >= 260 && pos.y >= 15 && pos.x <= 290 && pos.y <= 45 && spongebob4 == false) {
 		console.log("click: " + pos.x + ", " + pos.y + "On the bubble")
 		spongebob4 = true;
 		foundADifference();
+        drawCircle(271,24,20,'blue');
+
 	}
     	if (pos.x >= 0 && pos.y >= 0 && pos.x <= 30 && pos.y <= 30 && spongebob5 == false) {
 		console.log("click: " + pos.x + ", " + pos.y + "On the window")
 		spongebob5 = true;
 		foundADifference();
+        drawCircle(20,14,40,'yellow');
+
 	}
     if(toFind==0){
         	var element1 = document.getElementById('toFind');
@@ -90,15 +97,12 @@ function foundADifference() {
 	var element2 = document.getElementById('found');
 	element2.textContent = found;
 }
-var color = 0 ;
-var radius = 0;
-function drawCircle(x,y) {
-context.fillStyle = 'hsl('+ color++ +',100%,50%)';
-context.beginPath();
-context.arc(x,y,radius,0,Math.PI*2,true)
-radius +=0.001;
-context.fill();
-    if(radius < 300){
-        requestAnimationFrame(drawCircle(x,y));
-    }
+function drawCircle(x,y,radius,style) {
+      context.beginPath();
+      context.arc(x, y, radius, 0, Math.PI*2,false);
+      context.lineWidth = 5;
+
+      // line color
+      context.strokeStyle = style;
+      context.stroke();
 }
