@@ -6,9 +6,9 @@ canvas.addEventListener('click', doSomething);
 function draw(context) {
 	var img = new Image();
 	img.onload = function() {
-		context.drawImage(img, 0, 0, 300, 300);
+		context.drawImage(img, 0, 0, 600, 300);
 	}
-	img.src = "spongebob1.jpg";
+	img.src = "spongebob.jpg";
 }
 
 function getMouseXY(e) {
@@ -44,21 +44,21 @@ function doSomething(evt) {
 		console.log("click: " + pos.x + ", " + pos.y + "On the plate")
 		spongebob1 = true;
 		foundADifference();
-        drawCircle(260,158,25,'white');
+        drawCircle(260,158,560,158,25,'white');
 
 	}
 	if (pos.x >= 230 && pos.y >= 70 && pos.x <= 260 && pos.y <= 100 && spongebob2 == false) {
 		console.log("click: " + pos.x + ", " + pos.y + "On the ketchup")
 		spongebob2 = true;
 		foundADifference();
-        drawCircle(245,90,20,'green');
+        drawCircle(245,90,545,90,20,'green');
 
 	}
     	if (pos.x >= 160 && pos.y >= 120 && pos.x <= 190 && pos.y <= 150 && spongebob3 == false) {
 		console.log("click: " + pos.x + ", " + pos.y + "On the hat")
 		spongebob3 = true;
 		foundADifference();
-        drawCircle(174,135,15,'black');
+        drawCircle(174,135,474,135,15,'black');
 
 
 	}
@@ -66,14 +66,14 @@ function doSomething(evt) {
 		console.log("click: " + pos.x + ", " + pos.y + "On the bubble")
 		spongebob4 = true;
 		foundADifference();
-        drawCircle(271,24,20,'blue');
+        drawCircle(271,24,571,24,20,'blue');
 
 	}
     	if (pos.x >= 0 && pos.y >= 0 && pos.x <= 30 && pos.y <= 30 && spongebob5 == false) {
 		console.log("click: " + pos.x + ", " + pos.y + "On the window")
 		spongebob5 = true;
 		foundADifference();
-        drawCircle(20,14,40,'yellow');
+        drawCircle(20,14,325,14,20,'yellow');
 
 	}
     if(toFind==0){
@@ -97,9 +97,19 @@ function foundADifference() {
 	var element2 = document.getElementById('found');
 	element2.textContent = found;
 }
-function drawCircle(x,y,radius,style) {
+function drawCircle(x,y,x2,y2,radius,style) {
       context.beginPath();
+    context.strokeStyle = style;
+              context.lineWidth = 5;
+
       context.arc(x, y, radius, 0, Math.PI*2,false);
+          context.stroke();
+          context.beginPath();
+
+        context.arc(x2, y2, radius, 0, Math.PI*2,false);
+          context.stroke();
+
+
       context.lineWidth = 5;
 
       // line color
