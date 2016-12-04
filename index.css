@@ -1,21 +1,22 @@
 /* Assigning logo in the navigation paddings, height and width */
+
 body nav ul li img {
     height: 43.2px;
     width: 43.2px;
-	padding: 3px 10px 0px 10px;
-
+    padding: 3px 10px 0px 10px;
 }
-
 /* Making nav list items vertical allign in the middle */
+
 body nav ul li {
     vertical-align: middle;
 }
-
 body nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* without this div height becomes 0px */
+    overflow: hidden;
+    /* without this div height becomes 0px */
+    
     background-color: skyblue;
 }
 body nav li {
@@ -23,33 +24,32 @@ body nav li {
 }
 body nav ul li a {
     display: inline-block;
-    transition: 0.7s; /* Adding transition time when changing background color or font-size */
+    transition: 0.7s;
+    /* Adding transition time when changing background color or font-size */
+    
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     color: rgb(50, 69, 80);
     line-height: 30px;
 }
-
 /* Changes background color when touched with the mouse */
+
 ul li a:hover {
     background-color: rgb(126, 168, 235);
 }
-
 /* Displaying no menu icon */
+
 ul.topnav li.icon {
     display: none;
 }
-
 body {
     background-color: aliceblue;
 }
-
 h1 {
     text-align: center;
     margin: 5px 0;
 }
-
 #billgatesdiv,
 #mediv,
 #butkeviciusdiv,
@@ -70,17 +70,17 @@ h1 {
 h3 {
     margin: 10px;
 }
-
-/* When the screen is less than 680 pixels , hide all list items except for logo. Show the list item that contains the link to open and close the topnav  */
+/* When the screen is less than 680 pixels , hide all list items except for logo(fist child). Show the list item that contains the link to open and close the topnav  */
 
 @media screen and (max-width: 701px) {
     ul.topnav li:not(:first-child) {
         display: none;
     }
-	/* Display the menu icon on right */
+    /* Display the menu icon on right */
+    
     ul.topnav li.icon {
         float: right;
-        display: inline-block; 
+        display: inline-block;
     }
 }
 /* If the screen has less width that 239px page will display elements as it was 240px */
@@ -123,17 +123,18 @@ h3 {
     #butkeviciusdiv {
         width: 100%;
     }
-	    #logo {
-        padding: 0 0; /* No padding for logo when small screen */
+    #logo {
+        padding: 0 0;
+        /* No padding for logo when small screen */
     }
 }
+/* For tablets and small desktops */
+
 @media screen and (min-width: 802px) {
     body nav ul li #logo {
         padding: 3px 30px 0px 30px;
     }
-    body nav ul li a {
-    }
-    #billgates,
+    body nav ul li a {} #billgates,
     #butkevicius,
     #articlePhoto1,
     #articlePhoto3,
@@ -163,11 +164,17 @@ h3 {
         display: block;
     }
 }
+/* Making comments from contact.html have width 90% of the parent element */
+
 #comments {
     width: 90%;
 }
+/* For desktops */
+
 @media screen and (min-width: 1000px) {
-    #wrapper {
+    /* When desktops are wider than 1000px content will be displayed in the middle and will not go larger than 1000px */
+    
+    body {
         width: 1000px;
         margin: auto;
     }
@@ -208,16 +215,20 @@ footer p {
     border-top: 1px solid rgb(150, 150, 150);
     color: rgb(126, 126, 126);
 }
-#spongebob2{
-    width:300px;
-    height:300px;
-    display:inline-block;
-    margin-right:10px;
-    margin-top:10px;
+#spongebob2 {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
 }
-canvas{
-    margin-top:10px;
+canvas {
+    margin-top: 10px;
 }
-#nextPuzzle{
-    clear:both;
+#nextPuzzle {
+    clear: both;
+}
+#recommendation {
+	text-decoration: none;
+	color: brown;
 }
