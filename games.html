@@ -2,71 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Puzzly</title>
-    <meta name="author" content="Benediktas Kazanavicius">
-    <link rel="stylesheet" href="index.css"> </head>
+	<meta charset="utf-8">
+	<title>Puzzly</title>
+	<meta name="author" content="Benediktas Kazanavicius">
+	<link rel="stylesheet" href="index.css">
+</head>
 
 <body>
-    <div id="wrapper">
-        <nav>
-            <ul class="topnav" id="myTopnav">
-                <li>
-                    <a href="news.html" id="logo"><img src="logo.png"></img>
-                    </a>
-                </li>
-                <li> <a href="news.html">News</a> </li>
-                <li> <a href="games.html">Games</a></li>
-                <li> <a href="founders.html">Founders</a> </li>
-                <li> <a href="contact.html">Contact</a> </li>
-                <li> <a href="accessibility.html">Accessibility</a> </li>
-                <li> <a href="recommendations.html">Recommendations</a></li>
-                <li class="icon">
-                    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-                </li>
-                <script>
-                    function myFunction() {
-                        var x = document.getElementById("myTopnav");
-                        if (x.className === "topnav") {
-                            x.className += " responsive";
-                        } else {
-                            x.className = "topnav";
-                        }
-                    }
-                </script>
-            </ul>
-        </nav>
+	<div id="wrapper">n
+		<!--Adding wrapper around the page-->
+		<nav>
+			<!-- Navigation -->
+			<ul class="topnav" id="myTopnav">
+				<!-- Listing all navigation elements -->
+				<li>
+					<a href="news.html" id="logo">
+						<img src="logo.png" alt="logo">
+						<!-- Adding logo which will lead to news.html -->
+					</a>
+				</li>
+				<li> <a href="news.html">News</a> </li>
+				<li> <a href="games.html">Games</a>
+				</li>
+				<li> <a href="founders.html">Founders</a> </li>
+				<li> <a href="contact.html">Contact</a> </li>
+				<li> <a href="accessibility.html">Accessibility</a> </li>
+				<li> <a href="recommendations.html">Recommendations</a>
+				</li>
+				<li class="icon">
+					<a onclick="navigation()">&#9776;</a>
+					<!-- Added menu icon which when clicked will start function navigation()-->
+				</li>
+				<script src="nav.js">
+				</script>
+				<!-- Adding navigation script -->
+			</ul>
+		</nav>
 		<h1> Our games </h1>
-        <article id="article5" class="newsArticle">
-            <img src="spongebob.jpg" id="articlePhoto5" class="articlePhoto">
-            <p class="articleText" id="articleText5"> Check our our new game SPOT THE DIFFERENCE! </p>
+		<article id="article5" class="newsArticle">
+			<img src="spongebob.jpg" id="articlePhoto5" class="articlePhoto" alt="spongebobSpotTheDifference">
+			<h2> Spot the difference</h2>
+			<p class="articleText" id="articleText5"> Check our our new game SPOT THE DIFFERENCE! </p>
 			<a href="spotTheDifference.html" class="articleText"> Click here to try it </a>
-        </article>
-
-        <article id="article4" class="newsArticle">
-            <img src="logo.png" id="articlePhoto4" class="articlePhoto">
-            <p class="articleText" id="articleText4"> This game is still under development.</p>
-        </article>
-
-        <article id="article3" class="newsArticle">
-            <img src="logo.png" id="articlePhoto3" class="articlePhoto">
-            <p class="articleText" id="articleText4"> This game is still under development.</p>
-        </article>
-
-        <article id="article2" class="newsArticle">
-            <img src="logo.png" id="articlePhoto2" class="articlePhoto">
-            <p class="articleText" id="articleText4"> This game is still under development.</p>
-            </p>
-        </article>
-
-        <article id="article1" class="newsArticle">
-            <img src="logo.png" id="articlePhoto1" class="articlePhoto">
-            <p class="articleText" id="articleText4"> This game is still under development.</p>
-        </article>
+		</article>
+		<article id="article4" class="newsArticle">
+			<img src="logo.png" id="articlePhoto4" class="articlePhoto" alt="logo">
+			<h2> Be patient!</h2>
+			<p class="articleText" id="articleText4"> This game is still under development.</p>
+		</article>
+		<article id="article3" class="newsArticle">
+			<img src="logo.png" id="articlePhoto3" class="articlePhoto" alt="logo">
+			<h2> Be patient!</h2>
+			<p class="articleText" id="articleText3"> This game is still under development.</p>
+		</article>
+		<article id="article2" class="newsArticle">
+			<img src="logo.png" id="articlePhoto2" class="articlePhoto" alt="logo">
+			<h2> Be patient!</h2>
+			<p class="articleText" id="articleText2"> This game is still under development.</p>
+		</article>
+		<article id="article1" class="newsArticle">
+			<img src="logo.png" id="articlePhoto1" class="articlePhoto" alt="logo">
+			<h2> Be patient!</h2>
+			<p class="articleText" id="articleText1"> This game is still under development.</p>
+		</article>
+	</div>
+	<footer>
+		<p><small> Created by Benediktas Kazanavicius</small> </p>
+	</footer>
 </body>
-<footer>
-    <p><small> Created by Benediktas Kazanavicius</small> </p>
-</footer>
-</div>
 
 </html>
