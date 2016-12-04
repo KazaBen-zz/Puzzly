@@ -7,7 +7,7 @@
     <meta name="author" content="Benediktas Kazanavicius">
     <link rel="stylesheet" href="index.css"> </head>
 
-
+<body>
     <div id="wrapper">
         <nav>
             <ul class="topnav" id="myTopnav">
@@ -24,20 +24,46 @@
                 <li class="icon">
                     <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
                 </li>
-                <script src="nav.js"></script>
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
             </ul>
         </nav>
- <body>
-     <h2> Spot 5 differences !</h2>
-     <h4> Press on the place where you see the difference on the left picture </h3>
-     <p id="horizontal"> For best expierience use hold your phone horizontal </p>
-    <canvas id="canvas" width="600" height="300"></canvas>
-    <script src="puzzle.js"></script>
-<p>Differences to find: </p>
-<p id="toFind"> 5 </p>
-<p> Differences found </p>
-<p id="found"> 0 </p>
-<input id="clickMe" type="button" value="Next Puzzle" onclick="changePuzzle();" />
+		<h1> Our games </h1>
+        <article id="article5" class="newsArticle">
+            <img src="spongebob.jpg" id="articlePhoto5" class="articlePhoto">
+            <p class="articleText" id="articleText5"> Check our our new game SPOT THE DIFFERENCE! </p>
+			<a href="spotTheDifference.html" class="articleText"> Click here to try it </a>
+        </article>
+
+        <article id="article4" class="newsArticle">
+            <img src="logo.png" id="articlePhoto4" class="articlePhoto">
+            <p class="articleText" id="articleText4"> This game is still under development.</p>
+        </article>
+
+        <article id="article3" class="newsArticle">
+            <img src="logo.png" id="articlePhoto3" class="articlePhoto">
+            <p class="articleText" id="articleText4"> This game is still under development.</p>
+        </article>
+
+        <article id="article2" class="newsArticle">
+            <img src="logo.png" id="articlePhoto2" class="articlePhoto">
+            <p class="articleText" id="articleText4"> This game is still under development.</p>
+            </p>
+        </article>
+
+        <article id="article1" class="newsArticle">
+            <img src="logo.png" id="articlePhoto1" class="articlePhoto">
+            <p class="articleText" id="articleText4"> This game is still under development.</p>
+        </article>
+</body>
 <footer>
     <p><small> Created by Benediktas Kazanavicius</small> </p>
 </footer>
