@@ -46,21 +46,26 @@
 		<p>
 			Let us know if you have any questions!
 		</p>
-		<form name="myform" action="http://www.dcs.shef.ac.uk/cgi-bin/FormMail.pl" method="get"> <!-- Adding form to send emails to my university mail -->
-			<input type="hidden" name="recipient" value="bkazanavicius1@sheffield.ac.uk">
-			<input type="hidden" name="subject" value="Test Form">
+        <form name="myform" action="http://www.dcs.shef.ac.uk/cgi-bin/FormMail.pl" method="get">
+
+            <input type="hidden" name="recipient" value="bkazanavicius1@sheffield.ac.uk">
+
+            <input type="hidden" name="subject" value="Test Form">
+
+            <p>
+                <label for="email">Your e-mail:</label>
+                <input type="email" name="email" id="email" maxlength="60" size="30" placeholder="type your e-mail..." required>
+            </p>
+
+            <p>
+                <textarea name="comments" id="comments" placeholder="type your comments..." rows="5" cols="50"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" name="submit" id="submit" value="Submit">
+                <input type="reset">
+            </p>
 		</form>
-		<p>
-			<label for="email">Your e-mail:</label>
-			<input type="email" name="email" id="email" maxlength="60" size="30" placeholder="type your e-mail..." required>
-		</p>
-		<p>
-			<textarea name="comments" id="comments" placeholder="type your comments..." rows="5" cols="50"></textarea>
-		</p>
-		<p>
-			<input type="submit" name="submit" id="submit" value="Submit">
-			<input type="reset">
-		</p>
 	</div>
 	<footer>
 		<p><small> Created by Benediktas Kazanavicius</small> </p>
