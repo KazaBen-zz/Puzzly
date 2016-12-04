@@ -23,27 +23,33 @@ body nav li {
 }
 body nav ul li a {
     display: inline-block;
-    transition: 0.7s;
+    transition: 0.7s; /* Adding transition time when changing background color or font-size */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     color: rgb(50, 69, 80);
     line-height: 30px;
 }
+
+/* Changes background color when touched with the mouse */
 ul li a:hover {
     background-color: rgb(126, 168, 235);
 }
 
+/* Displaying no menu icon */
 ul.topnav li.icon {
     display: none;
 }
+
 body {
     background-color: aliceblue;
 }
+
 h1 {
     text-align: center;
     margin: 5px 0;
 }
+
 #billgatesdiv,
 #mediv,
 #butkeviciusdiv,
@@ -63,20 +69,17 @@ h1 {
 #article5 {
     margin: 10px;
 }
-@media only screen and (max-width: 513px) {
-    #logo {
-        padding: 0 0;
-    }
-}
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 
-@media screen and (max-width: 680px) {
+/* When the screen is less than 680 pixels , hide all list items except for logo. Show the list item that contains the link to open and close the topnav  */
+
+@media screen and (max-width: 701px) {
     ul.topnav li:not(:first-child) {
         display: none;
     }
+	/* Display the menu icon on right */
     ul.topnav li.icon {
         float: right;
-        display: inline-block;
+        display: inline-block; 
     }
 }
 /* If the screen has less width that 239px page will display elements as it was 240px */
@@ -119,13 +122,15 @@ h1 {
     #butkeviciusdiv {
         width: 100%;
     }
+	    #logo {
+        padding: 0 0; /* No padding for logo when small screen */
+    }
 }
-@media screen and (min-width: 803px) {
+@media screen and (min-width: 802px) {
     body nav ul li #logo {
         padding: 3px 30px 0px 30px;
     }
     body nav ul li a {
-        font-size: 1.25em;
     }
     #billgates,
     #butkevicius,
