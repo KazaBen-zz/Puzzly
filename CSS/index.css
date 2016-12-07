@@ -93,40 +93,23 @@ h3 {
         float: right;
         display: inline-block;
     }
-	
-	    ul.topnav.responsive {
+	    ul.responsive {
         position: relative;
     }
-	/* To keep menu icon on the same place when pressed */
-    ul.topnav.responsive li.icon { 
+    ul.responsive li.icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-    ul.topnav.responsive li {
+    ul.responsive li {
         float: none;
         display: inline;
     }
-    ul.topnav.responsive li a {
+    ul.responsive li a {
         display: block;
         text-align: left;
     }
-    #billgates,
-    #me,
-    #butkevicius {
-        width: 100%;
-    }
-    #billgates {
-        margin-top: 30px;
-    }
-    .articlePhoto,
-    #billgatesdiv,
-    #mediv,
-    #butkeviciusdiv {
-        width: 100%;
-    }
-    #logo {
-        padding: 1.5px 0 0 0;
+	   
 }
 /* If the screen has less width that 239px page will display elements as it was 240px */
 
@@ -138,7 +121,7 @@ h3 {
 
 /* For tablets and small desktops */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
     body nav ul li #logo {
         padding: 3px 30px 0px 30px;
     }
@@ -174,7 +157,26 @@ h3 {
     }
 }
 /* Making comments from contact.html have width 90% of the parent element */
-
+@media screen and (max-width: 602px) {
+    #billgates,
+    #me,
+    #butkevicius {
+        width: 100%;
+    }
+    #billgates {
+        margin-top: 30px;
+    }
+    .articlePhoto,
+    #billgatesdiv,
+    #mediv,
+    #butkeviciusdiv {
+        width: 100%;
+    }
+    #logo {
+        padding: 0 0;
+        /* No padding for logo when small screen */
+    }
+}
 #comments {
     width: 90%;
 }
