@@ -10,7 +10,11 @@ input,textarea {
     outline:0px; /* Removes blue border from textarea/input when clicked */
 
 }
-
+#clickHereToTryIt{
+	text-decoration: none;
+	font-size: 1.5em;
+	color: navy;
+}
 body nav ul li img {
     width: 43.2px;
     padding: 5px 10px 0px 10px;
@@ -145,12 +149,13 @@ h3 {
     .articlePhoto {
         width: 300px;
     }
-    h2 {
+    h2,h3{
         text-align: center;
     }
     .foundertext,
     .articleText {
         margin: 10px;
+		text-align: center;
     }
     #article5 {
         display: block;
