@@ -1,37 +1,36 @@
-/* Assigning logo in the navigation paddings, height and width */
-body{
-	font-family: "Comic Sans MS", cursive, sans-serif;
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
-img{
-	border-radius: 15px;
+img {
+    border-radius: 15px;
 }
-input,textarea {
-	border-radius: 8px;
-    outline:0px; /* Removes blue border from textarea/input when clicked */
+input,
+textarea {
+    border-radius: 8px;
+    outline: 0px;
+    /* Removes blue border from textarea/input when clicked */
+}
+#clickHereToTryIt {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: navy;
+}
 
-}
-#clickHereToTryIt{
-	text-decoration: none;
-	font-size: 1.5em;
-	color: navy;
-}
+/* Assigning logo in the navigation paddings, height and width */
 body nav ul li img {
     width: 43.2px;
     padding: 5px 10px 0px 10px;
 }
-/* Making nav list items vertical allign in the middle */
 
+/* Making nav list items vertical allign in the middle */
 body nav ul li {
     vertical-align: middle;
-	
 }
 body nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    /* without this div height becomes 0px */
-    
+    overflow: hidden; /* without this div height becomes 0px */   
     background-color: skyblue;
 }
 body nav li {
@@ -39,22 +38,20 @@ body nav li {
 }
 body nav ul li a {
     display: inline-block;
-    transition: 0.7s;
-    /* Adding transition time when changing background color or font-size */
-    
+    transition: 0.7s; /* Adding transition time when changing background color or font-size */   
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     color: rgb(50, 69, 80);
     line-height: 30px;
 }
-/* Changes background color when touched with the mouse */
 
+/* Changes background color when touched with the mouse */
 ul li a:hover {
     background-color: rgb(126, 168, 235);
 }
-/* Displaying no menu icon */
 
+/* Displaying no menu icon */
 ul.topnav li.icon {
     display: none;
 }
@@ -65,11 +62,12 @@ h1 {
     text-align: center;
     margin: 5px 0;
 }
+
 #billgatesdiv,
 #mediv,
 #butkeviciusdiv,
 .newsArticle {
-    overflow: hidden;
+    overflow: hidden; /* Without this div height becomes 0px because of the floated elements inside */
     border-top: 1px solid rgb(130, 130, 130);
     padding-top: 10px;
     margin-top: 10px;
@@ -85,21 +83,24 @@ h1 {
 h3 {
     margin: 10px;
 }
-/* When the screen is less than 800 pixels , hide all list items except for logo(fist child). Show the list item that contains the link to open and close the topnav  */
 
+/* When the screen is less than 800 pixels , hide all list items except for logo(fist child). Show the list item(menu icon) that contains the link to open and close the topnav  */
 @media screen and (max-width: 800px) {
     ul.topnav li:not(:first-child) {
         display: none;
     }
+	
     /* Display the menu icon on right */
-    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.*/
     ul.topnav li.icon {
         float: right;
         display: inline-block;
     }
-	    ul.responsive {
+    ul.responsive {
         position: relative;
     }
+	
+	/* Setting this to keep menu icon on the same position while other elements act as a drop-down menu */
     ul.responsive li.icon {
         position: absolute;
         right: 0;
@@ -113,10 +114,9 @@ h3 {
         display: block;
         text-align: left;
     }
-	   
 }
-/* If the screen has less width that 239px page will display elements as it was 240px */
 
+/* If the screen has less width that 239px page will display elements as it was 240px */
 @media screen and (max-width: 239px) {
     #wrapper {
         width: 240px;
@@ -124,13 +124,11 @@ h3 {
 }
 
 /* For tablets and small desktops */
-
 @media screen and (min-width: 600px) {
     body nav ul li #logo {
         padding: 3px 30px 0px 30px;
     }
-
-	#billgates,
+    #billgates,
     #butkevicius,
     #articlePhoto1,
     #articlePhoto3,
@@ -149,19 +147,20 @@ h3 {
     .articlePhoto {
         width: 300px;
     }
-    h2,h3{
+    h2,
+    h3 {
         text-align: center;
     }
     .foundertext,
     .articleText {
         margin: 10px;
-		text-align: center;
+        text-align: center;
     }
     #article5 {
         display: block;
     }
 }
-/* Making comments from contact.html have width 90% of the parent element */
+
 @media screen and (max-width: 602px) {
     #billgates,
     #me,
@@ -178,18 +177,19 @@ h3 {
         width: 100%;
     }
     #logo {
-        padding: 0 0;
-        /* No padding for logo when small screen */
+        padding: 0 0; /* No padding for logo when small screen */
     }
 }
+
+/* Making comments from contact.html have width 90% of the parent element */
 #comments {
     width: 90%;
 }
-/* For desktops */
 
+/* For desktops */
 @media screen and (min-width: 1000px) {
+	
     /* When desktops are wider than 1000px content will be displayed in the middle and will not go larger than 1000px */
-    
     body {
         width: 1000px;
         margin: auto;
@@ -245,6 +245,6 @@ canvas {
     clear: both;
 }
 #recommendation {
-	text-decoration: none;
-	color: brown;
+    text-decoration: none;
+    color: brown;
 }
